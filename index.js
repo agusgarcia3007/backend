@@ -8,7 +8,8 @@ const cors = require('cors');
 connectDB();
 
 
-//enable cors
+//enable cors 
+
 app.use(cors());
 
 //enable express.json
