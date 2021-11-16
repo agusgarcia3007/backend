@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.port || 4000
+const PORT = process.env.PORT || 4000
 const connectDB = require('./config/db');
 const cors = require('cors');
 
@@ -20,6 +20,6 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/projects', require('./routes/projects'));
 app.use('/api/tasks', require('./routes/tasks'));
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
